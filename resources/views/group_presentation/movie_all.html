@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bookstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/movie_all.css">
+    <link rel="stylesheet" href="button.css">
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        .border {
+            border-width: 5px !important;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col d-flex justify-content-around">
+                <div id="playing_now" class="btn btn-success text-center border border-dark p-2 active2">
+                    <!-- <h1 style="color: black;">現正熱映</h1> -->
+                    <button class="btn draw-border">現正熱映</button>
+                </div>
+                <div id="coming_soon" class="btn btn-danger text-center border border-dark p-2">
+                    <!-- <h1 style="color: black;">即將上映</h1> -->
+                    <button class="btn draw-border">即將上映</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col d-flex justify-content-around flex-wrap">
+                    <div class="card m-3" style="width: 18%;" data-grade="{{$movie->movie_type_id}}">
+                        <a href="">
+                            <img src="https://thelogocompany.net/wp-content/uploads/2017/05/Jaws-Poster.jpg"
+                                class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-center m-0">普遍級</p>
+                                <p class="card-text text-center m-0">標題</p>
+                                <p class="card-text text-center m-0">上映日期</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card m-3" style="width: 18%;" data-grade="{{$movie->movie_type_id}}">
+                        <a href="">
+                            <img src="https://thelogocompany.net/wp-content/uploads/2017/05/Jaws-Poster.jpg"
+                                class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-center m-0">普遍級</p>
+                                <p class="card-text text-center m-0">標題</p>
+                                <p class="card-text text-center m-0">上映日期</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card m-3" style="width: 18%;" data-grade="{{$movie->movie_type_id}}">
+                        <a href="">
+                            <img src="https://thelogocompany.net/wp-content/uploads/2017/05/Jaws-Poster.jpg"
+                                class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-center m-0">普遍級</p>
+                                <p class="card-text text-center m-0">標題</p>
+                                <p class="card-text text-center m-0">上映日期</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card m-3" style="width: 18%;" data-grade="{{$movie->movie_type_id}}">
+                        <a href="">
+                            <img src="https://thelogocompany.net/wp-content/uploads/2017/05/Jaws-Poster.jpg"
+                                class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p class="card-text text-center m-0">普遍級</p>
+                                <p class="card-text text-center m-0">標題</p>
+                                <p class="card-text text-center m-0">上映日期</p>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="/js/movie_all.js"></script>
+
+    <script>
+        // var playing_now = document.querySelector('#playing_now')
+        // var coming_soon = document.querySelector('#coming_soon')
+
+        // coming_soon.onclick = function () {
+        //     coming_soon.classList.add('active2')
+        //     playing_now.classList.remove('active2')
+        // }
+
+        // playing_now.onclick = function () {
+        //     playing_now.classList.add('active2')
+        //     coming_soon.classList.remove('active2')
+        // }
+
+    </script>
+</body>
+
+</html>
