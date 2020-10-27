@@ -9,9 +9,10 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
-        "darryldecode/cart": "^4.2",
+        "doctrine/dbal": "^2.12",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.18.35",
+        "laravel/socialite": "^5.0",
         "laravel/tinker": "^2.0"
     },
     "require-dev": {

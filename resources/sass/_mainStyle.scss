@@ -1,0 +1,64 @@
+// how to import, 檔名前加底線 _ ,
+// import的時候不用打底線,也不用加副檔名
+// @import 'mainStyle';
+
+// main color
+$mainColor: #161718; 
+$golden: #b09568;
+$goldenDarker: #dbc5b0;
+$colorWhite: #e4e5e5;
+$redColor: red;
+
+$gray:#808080; //框線顏色
+$colorGolden:#b09568; //金色
+$bgColor:#161718; //背景
+$textColor:#e4e5e5; //字體顏色
+.margin-0{
+    margin: 0;
+}
+
+// font wieght
+h1{
+    font-size: 48px;
+    @extend .margin-0;
+}
+h2{
+    font-size: 36px;
+    @extend .margin-0;
+}
+h3{
+    font-size: 26px;
+    @extend .margin-0;
+}
+h4{
+    font-size: 18px;
+    @extend .margin-0;
+}
+h5{
+    font-size: 14px;
+    @extend .margin-0;
+}
+
+// default style
+.btnMainColor{
+    color: $colorWhite;
+    background: $mainColor;
+    border: 1px solid $colorWhite;
+    cursor: pointer;
+}
+
+.btnGoldenColor{
+    color:$mainColor;
+    background: $golden;
+    border: 1px solid $mainColor;
+}
+
+.default{
+    width: 100%;
+    height: 100px;
+    background: $mainColor;
+    text-align: center;
+    color: $colorWhite;
+    line-height: 100px;
+}
+

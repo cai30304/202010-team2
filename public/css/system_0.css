@@ -1,0 +1,228 @@
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+.btnMainColor, .member-btn {
+  color: #fff;
+  background: #282c37;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.btnGoldenColor {
+  color: #282c37;
+  background: #f3e881;
+  border: 1px solid #282c37;
+}
+
+/* .default, nav, footer {
+  width: 100%;
+  height: 100px;
+  background: #282c37;
+  text-align: center;
+  color: #fff;
+  line-height: 100px;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #e4e5e5;
+  background-color: #161718;
+}
+
+/* nav {
+  font-size: 48px;
+} */
+
+.member-btn:hover {
+  background: #dbc5b0;
+}
+
+#place {
+  width: 100%;
+  margin-bottom: 80px;
+  background-color: #808080;
+}
+
+#place #place_container {
+  padding: 15px 0;
+}
+#place #place_container span:first-child{
+    color:#dbc5b0;
+}
+
+#seats_select {
+  margin-bottom: 80px;
+  padding: 8.5px 0;
+}
+
+#seats_select #seats_select_container {
+  margin: 0 auto;
+}
+
+#seats_select #seats_select_container #seats_left {
+  width: 64%;
+  min-height: 400px;
+}
+
+#seats_select #seats_select_container #seats_left .title {
+  width: 100%;
+  height: 100px;
+  background-color: #b09568;
+  text-align: center;
+}
+
+#seats_select #seats_select_container #seats_left .title h3 {
+  line-height: 80px;
+}
+
+#seats_select #seats_select_container #seats_left .seats {
+  width: 100%;
+  border: 1px solid #e4e5e5;
+  padding: 31px 0 31px 0;
+}
+
+#seats_select #seats_select_container #seats_left .seats .option {
+  width: 75%;
+  height: 120px;
+  background-color: royalblue;
+  border-radius: 5px;
+}
+
+#seats_select #seats_select_container #seats_left .seats .option .option_l {
+  width: 25%;
+  height: 100%;
+  background-color: #b09568;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#seats_select #seats_select_container #seats_left .seats .option .option_r {
+  width: 75%;
+  height: 100%;
+  background-color: #808080;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 20px 40px 20px 20px;
+}
+
+#seats_select #seats_select_container #seats_left .seats .option .option_r .btns {
+  width: 135px;
+  height: 50px;
+  background-color: gray;
+  border-radius: 5px;
+  line-height: 50px;
+}
+
+#seats_select #seats_select_container #seats_left .seats .option .option_r .btns .btn-l {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid #b09568;
+}
+
+#seats_select #seats_select_container #seats_left .seats .option .option_r .btns .btn-m {
+  border-top: 1px solid #b09568;
+  border-bottom: 1px solid #b09568;
+}
+
+#seats_select #seats_select_container #seats_left .seats .option .option_r .btns .btn-r {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #b09568;
+}
+
+#seats_select #seats_select_container #seats_right {
+  width: 33%;
+  min-height: 400px;
+  border: 1px solid #e4e5e5;
+}
+
+#seats_select #seats_select_container #seats_right .info {
+  padding: 15px 12px 0 12px;
+}
+
+.modal-dialog {
+  max-width: 350px !important;
+  margin: 20px auto !important;
+}
+
+.modal-dialog .modal-content {
+  background-color: #808080;
+}
+
+#btns_group{
+    margin-bottom: 95px!important;
+}
+
+.btn-l:hover{
+    cursor: pointer;
+}
+
+.btn-r:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 950px;
+  }
+  #seats_select_container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  #seats_left {
+    width: 100% !important;
+  }
+  #seats_right {
+    width: 100% !important;
+  }
+  #seats_right .info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 480px;
+  }
+  #seats_right img {
+    width: 150px;
+  }
+  #seats_select #seats_select_container #seats_left .seats #seats_table {
+    width: 100%;
+    padding: 20px 0;
+  }
+  #seats_select #seats_select_container #seats_left .seats #seats_table .seats_row .seat {
+    width: 16px;
+    height: 16px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 15px;
+    display: inline-block;
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=system_0.css.map */

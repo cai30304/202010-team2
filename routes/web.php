@@ -11,70 +11,47 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', 'FrontController@index');
-
-Route::get('/contact_us', 'FrontController@contact_us');
-
-Route::POST('/store_contact', 'FrontController@store_contact');
-
-Route::get('/news', 'FrontController@news');
-
-Route::get('/news_info/{news_id}', 'FrontController@news_info');
-
-Route::get('/movie_all', 'FrontController@movie_all');
+Route::get('/future', 'FrontController@index_future');
+Route::get('/system_0', 'FrontController@system_0');
+Route::get('/system_0/{movie_id}_{movie_id2}', 'FrontController@system_0');
+Route::get('/system_1', 'FrontController@system_1');
+Route::get('/system_1/{movie_id}_{movie_id2}_{amount1}_{amount2}_{amount3}', 'FrontController@system_1');
+Route::get('/system_2', 'FrontController@system_2');
+Route::get('/system_2/{movie_id}_{movie_id2}_{amount1}_{amount2}_{amount3}_{seat}', 'FrontController@system_2');
+Route::get('/query', 'FrontController@query');
+Route::get('/query/{date}', 'FrontController@querySelect');
+Route::get('/movie_all', 'FrontController@movie_now');
+Route::get('/movie_now', 'FrontController@movie_now');
+Route::get('/movie_future', 'FrontController@movie_future');
 
 Route::get('/movie_info/{movie_id}', 'FrontController@movie_info');
+Route::get('/cinema_info', 'FrontController@cinema_info');
 
-Route::get('/movie_all/{movie_type_id}', 'FrontController@A');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+// Route::get('send-mail','MailSend@mailsend');
+
+// Route::get('login/github', 'Auth\LoginController@redirectToProvider');
+// Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback');
+
+Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
 
-// cart test
-
-Route::get('/addProductToCar', 'CartController@addProductToCar');
-Route::get('/getContent', 'CartController@getContent');
-Route::get('/TotalCart', 'CartController@TotalCart');
-
-
-// Auth::routes();
-
-Auth::routes(['register' => false, 'reset' => false,]);
 
 Route::get('/admin', 'HomeController@index')->name('home');
 
 Route::prefix('admin')->middleware(['auth'])->group(function(){
 
-    Route::get('news','NewsController@index');
-    Route::get('news/create','NewsController@create');
-    Route::post('news/store','NewsController@store');
-    Route::get('news/edit/{news_id}','NewsController@edit');
-    Route::post('news/update/{news_id}','NewsController@update');
-    Route::get('news/destory/{news_id}','NewsController@destory');
+    Route::get('movie','movieController@index');
+    Route::get('movie/create','movieController@create');
+    Route::post('movie/store','movieController@store');
+    Route::get('movie/edit/{movie_id}','movieController@edit');
+    Route::post('movie/update/{movie_id}','movieController@update');
+    Route::get('movie/destroy/{movie_id}','movieController@destroy');
 
 });
 
-Route::prefix('admin')->middleware(['auth'])->group(function(){
-
-    Route::get('movie','MovieController@index');
-    Route::get('movie/create','MovieController@create');
-    Route::post('movie/store','MovieController@store');
-    Route::get('movie/edit/{movie_id}','MovieController@edit');
-    Route::post('movie/update/{movie_id}','MovieController@update');
-    Route::get('movie/destory/{movie_id}','MovieController@destory');
-
-});
-
-Route::prefix('admin')->middleware(['auth'])->group(function(){
-
-    Route::get('movie_type','Movietype@index');
-    Route::get('movie_type/create','Movietype@create');
-    Route::post('movie_type/store','Movietype@store');
-    Route::get('movie_type/edit/{movie_id}','Movietype@edit');
-    Route::post('movie_type/update/{movie_id}','Movietype@update');
-    Route::get('movie_type/destory/{movie_id}','Movietype@destory');
-    Route::post('/ajax_upload_img','AdminController@ajax_upload_img');
-    Route::post('/ajax_delete_img','AdminController@ajax_delete_img');
-});

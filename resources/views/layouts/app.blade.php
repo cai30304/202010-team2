@@ -9,13 +9,19 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    @yield('css')
+
+    {{-- bootrap4 --}}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+
 </head>
 <body>
     <div id="app">
@@ -32,13 +38,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/admin/news">最新消息管理</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/admin/movie">電影總覽管理</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/admin/movie_type">電影評級管理</a>
+                            <a class="nav-link" href="/admin/movie">電影管理</a>
                         </li>
                     </ul>
 
@@ -47,6 +47,7 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
+
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
@@ -79,14 +80,8 @@
         </nav>
 
         <main class="py-4">
-            <div class="container">
-                @yield('content')
-            </div>
+            @yield('content')
         </main>
     </div>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
-    @yield('js')
 </body>
 </html>

@@ -4,21 +4,16 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class movie_all extends Model
+class Movie_all extends Model
 {
-    protected $table = 'movie_all';
+    protected $table='movie_alls';
 
-    Protected $fillable = [
-        'movie_poster','content_rating','title','foreign_title','release_date','time','movie_info','actor','movie_type_id'
+    protected $fillable = [
+        'movie_name','english_name','movie_about','movie_length','actors','release_date',
+        'hall','rating','poster','trailer','seat','movie_imgA','movie_imgB','movie_imgC'
     ];
-
-    public function movie_type()
+    public function show()
     {
-        return $this->belongsTo('App\movie_type');
-    }
-
-    public function movie_imgs()
-    {
-        return $this->hasMany('App\movie_imgs','movie_id');
+        return $this->hasMany('App\Show','movie_id');
     }
 }

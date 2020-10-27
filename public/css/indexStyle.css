@@ -1,0 +1,260 @@
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.btnMainColor {
+  color: #fff;
+  background: #282c37;
+  border: 1px solid #fff;
+}
+
+.btnGoldenColor {
+  color: #282c37;
+  background: #f8dfc2;
+  border: 1px solid #282c37;
+}
+
+.default {
+  width: 100%;
+  height: 100px;
+  background: #282c37;
+  text-align: center;
+  color: #fff;
+  line-height: 100px;
+}
+
+body {
+  background-color: #161718;
+}
+
+body hr {
+  background-color: #b09568;
+}
+
+.bg-dark {
+  background-color: #282c37 !important;
+}
+
+.navbar-dark .navbar-brand {
+  color: #b09568;
+  font-size: 24px;
+}
+
+.dropdown-menu {
+  background-color: #282c37;
+  border: 1px solid #b09568;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #e4e5e5;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #282c37;
+}
+
+.banner {
+  width: 100%;
+  height: 500px;
+}
+
+@media (max-width: 960px) {
+  .banner {
+    height: 250px;
+  }
+}
+
+.banner img {
+  width: 100%;
+  height: 500px;
+}
+
+@media (max-width: 960px) {
+  .banner img {
+    height: 250px;
+  }
+}
+
+.color {
+  color: #e4e5e5;
+}
+
+.slick-slide {
+  height: 600px;
+  padding-top: 60px;
+}
+
+.recommend .btn {
+  padding: 15px 25px;
+}
+
+.recommend .multiple-items {
+  height: 500px;
+}
+
+.recommend .multiple-items .card {
+  margin: 0 20px;
+  position: relative;
+  background-color: #222432;
+}
+
+.recommend .multiple-items .card .card-title{
+    font-size: 20px;
+}
+
+.recommend .multiple-items .card:hover button {
+  display: inline-block;
+  border-radius: 5px;
+  color:white;
+  background-color: darkslateblue!important;
+}
+
+@media (max-width: 960px) {
+  .recommend .multiple-items .card:hover button {
+    display: none;
+  }
+}
+
+.recommend .multiple-items .card:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media (max-width: 960px) {
+  .recommend .multiple-items .card:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.recommend .multiple-items .card button {
+  display: none;
+}
+
+.recommend .multiple-items .card .card-body {
+  min-height: 120px;
+  color: #e4e5e5;
+}
+
+.recommend .multiple-items .card .card-body a {
+  text-decoration: none;
+}
+
+.recommend .multiple-items .card .card-body a span {
+  font-size: 20px;
+  color: #e4e5e5;
+}
+
+.recommend .multiple-items .card .card-body a h5 {
+  color: #808080;
+  margin-bottom: 10px;
+}
+
+.recommend .multiple-items .card .card-body button {
+  border: 1px;
+  background-color: #d8d9da;
+  margin-left: 25px;
+}
+
+.recommend .multiple-items .slick-dots {
+  position: absolute;
+  bottom: -35px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #b09568;
+  text-align: center;
+  line-height: 50px;
+  color: #e4e5e5;
+}
+
+.draw-border {
+  -webkit-box-shadow: inset 0 0 0 3px #e4e5e5;
+          box-shadow: inset 0 0 0 3px #e4e5e5;
+  color: #e4e5e5;
+  -webkit-transition: color 0.25s 0.08333s;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+}
+
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border::before {
+  border-bottom-width: 3px;
+  border-left-width: 3px;
+}
+
+.draw-border::after {
+  border-top-width: 3px;
+  border-right-width: 3px;
+}
+
+.draw-border:hover {
+  color: #ffe593;
+}
+
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: #ffe593;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+  color: #e4e5e5;
+}
+
+.btn:focus {
+  outline: 2px solid #dfdcdc;
+}
+/*# sourceMappingURL=indexStyle.css.map */

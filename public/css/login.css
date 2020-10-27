@@ -1,0 +1,246 @@
+.margin-0, h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+/* h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+} */
+
+.btnMainColor, .member-btn, #Modal-section .modal-content .submit .btn-login, #Modal-section .modal-content .btn-group .register-btn:hover, #Modal-section .modal-content .btn-group .forgetPW-btn:hover, #Modal-section .modal-content .modal-footer .btn-back-to, #Modal-section .modal-content .modal-footer .btn-rule:hover {
+  color: #e4e5e5;
+  background: #161718;
+  border: 1px solid #e4e5e5;
+  cursor: pointer;
+}
+
+.btnGoldenColor, #Modal-section .modal-content .submit .btn-login:hover, #Modal-section .modal-content .btn-group .register-btn, #Modal-section .modal-content .btn-group .forgetPW-btn, #Modal-section .modal-content .modal-footer .btn-back-to:hover, #Modal-section .modal-content .modal-footer .btn-rule {
+  color: #161718;
+  background: #b09568;
+  border: 1px solid #161718;
+}
+
+/* .default, nav, footer {
+  width: 100%;
+  height: 100px;
+  background: #161718;
+  text-align: center;
+  color: #e4e5e5;
+  line-height: 100px;
+}
+
+nav {
+  font-size: 48px;
+} */
+
+.member-btn {
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+
+.member-btn:hover {
+  background: #b09568;
+}
+
+.active{
+    background-color: #b09568 !important;
+}
+/* * {
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+.active-none {
+  display: none;
+}
+
+.border-bottom-golden {
+  border-bottom: 1px solid #b09568;
+}
+
+.login_default, #Modal-section .modal-content .modal-body .login-fb, #Modal-section .modal-content .modal-body .login-google {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+/* #Modal-section {
+  height: 100vh;
+  width: 100%;
+}
+
+#Modal-section .test ul {
+  display: flex;
+}
+
+#Modal-section .test ul li {
+  padding: 30px;
+}
+
+#Modal-section .test ul li:hover .test-img {
+  display: block;
+}
+
+#Modal-section .test ul li a .test-img {
+  display: none;
+  width: 50px;
+} */
+
+#Modal-section .modal-dialog {
+  max-width: 400px;
+}
+
+#Modal-section .modal-content {
+  background: #161718;
+}
+
+#Modal-section .modal-content .modal-header {
+  padding: 0 16px;
+  border-bottom: unset;
+  background: #161718;
+  z-index: 2;
+}
+
+#Modal-section .modal-content .modal-header span {
+  color: #e4e5e5;
+}
+
+#Modal-section .modal-content .modal-body {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #161718;
+}
+
+#Modal-section .modal-content .modal-body h1 {
+  font-weight: bold;
+}
+
+#Modal-section .modal-content .modal-body h1, #Modal-section .modal-content .modal-body h3, #Modal-section .modal-content .modal-body p {
+  color: #b09568;
+}
+
+#Modal-section .modal-content .modal-body h3 {
+  margin-bottom: 10px;
+}
+
+#Modal-section .modal-content .modal-body .tab-forget {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#Modal-section .modal-content .modal-body .tab-forget span {
+  padding: 10px 20px;
+  color: #e4e5e5;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#Modal-section .modal-content .modal-body .tab-forget span:first-child {
+  margin-right: 20px;
+}
+
+#Modal-section .modal-content .modal-body .tab-forget span:hover {
+  border-radius: 5px;
+  background: #b09568;
+}
+
+#Modal-section .modal-content .modal-body .or {
+  text-align: center;
+  padding: 5px 0;
+}
+
+#Modal-section .modal-content .modal-body .login-fb {
+  background: royalblue;
+  transition: 0.3s;
+}
+
+#Modal-section .modal-content .modal-body .login-fb:hover {
+  cursor: pointer;
+  background: blue;
+}
+
+#Modal-section .modal-content .modal-body .login-google {
+  background: #f05050;
+  transition: 0.3s;
+}
+
+#Modal-section .modal-content .modal-body .login-google:hover {
+  cursor: pointer;
+  background: red;
+}
+
+#Modal-section .modal-content #login_input input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  padding-left: 20px;
+  border-radius: 3px;
+}
+
+#Modal-section .modal-content .submit {
+  padding-bottom: 10px;
+}
+
+#Modal-section .modal-content .submit .btn-login {
+  padding: 10px;
+  border-radius: 3px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+#Modal-section .modal-content .btn-group {
+  padding: 8px 16px;
+  width: 100%;
+  background: #161718;
+  justify-content: space-between;
+}
+
+#Modal-section .modal-content .btn-group .register-btn, #Modal-section .modal-content .btn-group .forgetPW-btn {
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 8px 30px;
+  transition: 0.3s;
+}
+
+#Modal-section .modal-content .modal-footer {
+  color: #e4e5e5;
+  background: #161718;
+}
+
+#Modal-section .modal-content .modal-footer .btn-back-to {
+  font-size: 12px;
+  transition: 0.3s;
+  padding: 8px 16px;
+}
+
+#Modal-section .modal-content .modal-footer .btn-close {
+  font-size: 12px;
+  background: gray;
+  padding: 8px 16px;
+}
+
+#Modal-section .modal-content .modal-footer .btn-rule {
+  font-size: 12px;
+  transition: 0.3s;
+  padding: 8px 16px;
+}
+/*# sourceMappingURL=login.css.map */
